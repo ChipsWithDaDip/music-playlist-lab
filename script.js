@@ -48,7 +48,7 @@ function displaySelectedSongs() {
 
     // TODO: Get the middle song from mySongs
     // HINT: Use Math.floor(mySongs.length / 2) for middle index
-    let middleSong = mySongs[Math.floor(mySongs.length / 2]; // Your code here
+    let middleSong = mySongs[Math.floor(mySongs.length / 2)]; // Your code here
 
     // DOM operations handled for you - focus on the array logic above
     document.getElementById('first-song').textContent = firstSong;
@@ -239,7 +239,7 @@ function createFormattedSongList() {
     // TODO: Use .map() method to create an array of formatted strings
     // MDN Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
     let formattedSongs = // Your code here - use mySongs.map(function(song, index) { ... })
-        MySongs.map(function(song, index) {
+        mySongs.map(function(song, index) {
             return (index + 1) + ". " + song + " ♫";
         });
 
